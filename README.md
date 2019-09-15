@@ -37,29 +37,61 @@
 
  
 3)  Simpan gambar ckedokteran.png
- # Jawaban
+ ### Jawaban
+ ![Screenshot (76)](https://user-images.githubusercontent.com/45744801/64917691-fd990c00-d7bc-11e9-98ba-7100c97e09ff.png)
+ buka menu file ->Export Object-> HTTP Object List lalu masukkan nama file yang akan dicari di text filter. disini kita mencari      ckedokteran.png
+ 
+ setelah itu tinggal save as/save untuk menyimpan gambar.
+ 
+ note : disini memang filenya yang tidak ada.
  
 4)  Cari charset dari halaman "ajk.if.its.ac.id"
- # Jawaban
+ ### Jawaban
+ ![Screenshot (77)](https://user-images.githubusercontent.com/45744801/64917692-feca3900-d7bc-11e9-9793-df83c79e63b5.png)
+ menggunakan syntax http.host == "ajk.if.its.ac.id" untuk Menampilkan semua paket dengan protokol HTTP yang host nya mengandung "ajk.if.its.ac.id". pilih salah satu file dari hasil filteran tadi lalu klik kanan untuk memilih menu Follow -> TCP Stream. setelah itu tulis charset di menu text filter.
  
-5)  Cari username dan password ketika login di "freeshare.lp.if.its ac.id"
- # Jawaban
+ note : host "ajk.if.its.ac.id" memang tidak ada.
+
+5)  Cari username dan password ketika login di "freeshare.lp.if.its.ac.id"
+ ### Jawaban
+ ![Screenshot (73)](https://user-images.githubusercontent.com/45744801/64917700-2e794100-d7bd-11e9-9be2-83e9d555de7a.png)
+ Menggunakan Syntax http.request.method == POST && http.host == "freeshare.lp.if.its.ac.id" setelah itu cari menu HTML Form URL Encoded di packet details panel/detail paket data. disitu kita bisa melihat bahwa user untuk login = "umum" dan password = "enter-umum". 
  
 6)  Sebutkan web server yang digunakan pada "www.ne.its.ac.id"
- # Jawaban
+ ### Jawaban
+ ![Screenshot (78)](https://user-images.githubusercontent.com/45744801/64917738-bcedc280-d7bd-11e9-8295-470060e281b8.png)
+ Menggunakan syntax http.host == "www.ne.its.ac.id" untuk Menampilkan semua paket dengan protokol HTTP yang host nya mengandung "www.ne.its.ac.id"
+ 
+ pilih salah satu file dari hasil filteran tadi lalu klik kanan untuk memilih menu Follow -> TCP Stream. kemudian tulis server di menu text filter maka akan ketahuan web server yang dipakai adalah Apache/2.4.10 (Debian).
+ ![Screenshot (79)](https://user-images.githubusercontent.com/45744801/64917741-bf501c80-d7bd-11e9-8df2-828dc52e5265.png)
  
 7)  Sebutkan versi PHP dan yang digunakan pada "riset.ajk.if.its.ac.id"
  # Jawaban
+ ![Screenshot (80)](https://user-images.githubusercontent.com/45744801/64917750-e60e5300-d7bd-11e9-8147-aa93e98f9327.png)
+ Menggunakan syntax http.host == "riset.ajk.if.its.ac.id" untuk Menampilkan semua paket dengan protokol HTTP yang host nya mengandung "riset.ajk.if.its.ac.id".
+ 
+ pilih salah satu file dari hasil filteran tadi lalu klik kanan untuk memilih menu Follow -> TCP Stream. kemudian tulis PHP di menu text filter maka akan ketahuan PHP yang dipakai adalah 5.5.9-1ubuntu4.26.
+ ![Screenshot (81)](https://user-images.githubusercontent.com/45744801/64917751-e73f8000-d7bd-11e9-87c7-51bb4434e820.png)
  
 8)  Filter pada wireshark kalian sehingga menampilkan hasil ping
  # Jawaban
+ ![Screenshot (82)](https://user-images.githubusercontent.com/45744801/64917754-fb837d00-d7bd-11e9-82e5-4a0e44db4fc3.png)
+ Menggunakan syntax "icmp" untuk menampilkan hasil ping.
  
 9)  Dapatkan semua metode GET yang mengakses "monta.if.its.ac.id"
  # Jawaban
+ ![Screenshot (83)](https://user-images.githubusercontent.com/45744801/64917771-41404580-d7be-11e9-954a-78206217d406.png)
+ menggunakan syntax http.request.method == GET  && http.host == "monta.if.its.ac.id"
  
+ http.request.method == GET untuk memfilter semua paket dengan protokol htpp yang menggunakan metode GET
+ http.host == "monta.if.its.ac.id" untuk  memfilter semua paket dengan protokol htpp yang host nya mengandung "monta.if.its.ac.id"
 10) Tunjukkan username dan password yang dimasukkan ketika login FTP
  # Jawaban
- 
+ ![Screenshot (84)](https://user-images.githubusercontent.com/45744801/64917839-36d27b80-d7bf-11e9-8a59-ee5e57781163.png)
+Menggunakan syntax ftp.request.command == USER || ftp.request.command == PASS
+
+disitu kita bisa melihat bahwa user dan password untuk login sama yaitu praktikum.
+
 11) Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika upload file "qwpeaspojdasjfpasjfpaosuhuy.jpg"
  # Jawaban
  
