@@ -16,7 +16,7 @@
  ### Jawaban
    ![Screenshot (105)](https://user-images.githubusercontent.com/45744801/64918916-c6cbf180-d7ce-11e9-8009-7fa707b7b875.png)
    
-   menggunakan syntax src port 21 && host ajk.if.its.ac.id 
+   menggunakan syntax src port 80 && host ajk.if.its.ac.id 
    
    ![Screenshot (104)](https://user-images.githubusercontent.com/45744801/64918918-c92e4b80-d7ce-11e9-910c-5262aa535f58.png)
    
