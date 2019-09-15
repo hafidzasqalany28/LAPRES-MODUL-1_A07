@@ -1,6 +1,6 @@
 # LAPRES-MODUL-1_A07
 
- # Soal "CAPTURE FILTER WIRESHARK"
+ ## Soal "CAPTURE FILTER WIRESHARK"
 
 1) Filter sehingga wireshark hanya mengambil paket yang mengandung port 21.
  # Jawaban
@@ -17,9 +17,12 @@
 5) Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id.
  # Jawaban
    
- # Soal "DISPLAY FILTER WIRESHARK"
+ ## Soal "DISPLAY FILTER WIRESHARK"
 1)  Tampilkan semua paket yang hostnya mengandung "www.ne.its.ac.id"
- # Jawaban
+ ### Jawaban
+ 
+   ![Screenshot (68)](https://user-images.githubusercontent.com/45744801/64916036-5d80ba00-d79f-11e9-972a-60869061c4f2.png) Menggunakan syntax http.host == "www.ne.its.ac.id" untuk Menampilkan semua paket dengan protokol HTTP yang host nya mengandung   "www.ne.its.ac.id"
+
  
 2)  Tampilkan paket yang hanya berasal dari IP 10.151.36 81 dan menuju web "mb.its.ac.id"
  # Jawaban
