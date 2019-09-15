@@ -25,7 +25,16 @@
 
  
 2)  Tampilkan paket yang hanya berasal dari IP 10.151.36 81 dan menuju web "mb.its.ac.id"
- # Jawaban
+ ### Jawaban
+ 
+   ![Screenshot (75)](https://user-images.githubusercontent.com/45744801/64917377-13f19880-d7ba-11e9-8af7-21d40822d6e6.png)
+   #### Menggunakan syntax ip.src == 10.151.36.81 && http.host == "mb.its.ac.id".
+   
+   ip.src == 10.151.36.81 untuk memfilter IP yang hanya berasal dari 10.151.36.81(ip source).
+     
+   http.host == "mb.its.ac.id" untuk memfilter paket dengan protokol HTTP yang host nya mengandung "mb.its.ac.id".
+ 
+
  
 3)  Simpan gambar ckedokteran.png
  # Jawaban
