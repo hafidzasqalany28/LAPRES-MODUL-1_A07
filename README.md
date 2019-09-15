@@ -3,7 +3,7 @@
  # Soal "CAPTURE FILTER WIRESHARK"
 
 1) Filter sehingga wireshark hanya mengambil paket yang mengandung port 21.
-   Jawaban
+ # Jawaban
     
 2) Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80 (ajk.if.its.ac.id).
  # Jawaban
