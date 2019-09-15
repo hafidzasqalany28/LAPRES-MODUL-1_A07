@@ -3,7 +3,7 @@
  # Soal "CAPTURE FILTER WIRESHARK"
 
 1) Filter sehingga wireshark hanya mengambil paket yang mengandung port 21.
-     # Jawaban
+ # Jawaban
     
 2) Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80 (ajk.if.its.ac.id).
  # Jawaban
@@ -20,6 +20,7 @@
  # Soal "DISPLAY FILTER WIRESHARK"
 1)  Tampilkan semua paket yang hostnya mengandung "www.ne.its.ac.id"
  # Jawaban
+   ![tes](C:\Users\HafidzAsqalany\Pictures\Screenshots\Screenshot (68).png)
 2)  Tampilkan paket yang hanya berasal dari IP 10.151.36 81 dan menuju web "mb.its.ac.id"
  # Jawaban
 3)  Simpan gambar ckedokteran.png
