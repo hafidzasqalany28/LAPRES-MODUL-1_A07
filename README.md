@@ -3,19 +3,43 @@
  ## Soal "CAPTURE FILTER WIRESHARK"
 
 1) Filter sehingga wireshark hanya mengambil paket yang mengandung port 21.
- # Jawaban
-    
+ ### Jawaban
+   ![Screenshot (92)](https://user-images.githubusercontent.com/45744801/64918901-a2701500-d7ce-11e9-8c57-28ce7e247c87.png)
+   menggunakan syntax port 21
+   ![Screenshot (93)](https://user-images.githubusercontent.com/45744801/64918903-a69c3280-d7ce-11e9-9b5b-2820ef263ca9.png)
+   
+   note : tidak ada hasil filter dari wireshark sebab web yang saya buka tidak ada yang mengandung port 21.
+   
 2) Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80 (ajk.if.its.ac.id).
- # Jawaban
-    
+ ### Jawaban
+   ![Screenshot (105)](https://user-images.githubusercontent.com/45744801/64918916-c6cbf180-d7ce-11e9-8009-7fa707b7b875.png)
+   menggunakan syntax src port 21 && host ajk.if.its.ac.id 
+   ![Screenshot (104)](https://user-images.githubusercontent.com/45744801/64918918-c92e4b80-d7ce-11e9-910c-5262aa535f58.png)
+   
 3) Filter sehingga wireshark hanya menampilkan paket yang menuju port 443 (google.com).
- # Jawaban
-    
+ ### Jawaban
+   ![Screenshot (106)](https://user-images.githubusercontent.com/45744801/64918922-d6e3d100-d7ce-11e9-8993-aa7eb19c66a0.png)
+   menggunakan syntax dst port 443 && host google.com
+   ![Screenshot (107)](https://user-images.githubusercontent.com/45744801/64918923-d8ad9480-d7ce-11e9-89f2-50eb61bc76c6.png)
+   
 4) Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian.
- # Jawaban
+ ### Jawaban
+   ![Screenshot (98)](https://user-images.githubusercontent.com/45744801/64918927-e95e0a80-d7ce-11e9-936a-9b14e22abf42.png)
+   buka cmd lalu ketikkan "ipconfig" tanpa tanda petik.
+   
+   setelah itu cari IPv4 Address untuk mengetahui IP PC/laptop kita. disini IP laptop saya yaitu 192.168.1.14
+   ![Screenshot (99)](https://user-images.githubusercontent.com/45744801/64918930-ea8f3780-d7ce-11e9-9ae8-48b1e29a35ff.png)
+   
+   buka wireshark lalu masukkan syntax ip src 192.168.1.14 di capture filter.
+   ![Screenshot (100)](https://user-images.githubusercontent.com/45744801/64918932-f24edc00-d7ce-11e9-8ef7-5a0ae6a55f5a.png)
+   ![Screenshot (101)](https://user-images.githubusercontent.com/45744801/64918934-f5e26300-d7ce-11e9-98b0-b8100a6f1bd5.png) 
     
 5) Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id.
- # Jawaban
+ ### Jawaban
+   ![Screenshot (103)](https://user-images.githubusercontent.com/45744801/64918937-0692d900-d7cf-11e9-8b4e-392b67a2b996.png)
+   menggunakan syntax dst host monta.if.its.ac.id.
+   ![Screenshot (102)](https://user-images.githubusercontent.com/45744801/64918939-07c40600-d7cf-11e9-929a-47fe11b046ec.png)
+
    
  ## Soal "DISPLAY FILTER WIRESHARK"
 1)  Tampilkan semua paket yang hostnya mengandung "www.ne.its.ac.id"
@@ -28,7 +52,7 @@
  ### Jawaban
  
    ![Screenshot (75)](https://user-images.githubusercontent.com/45744801/64917377-13f19880-d7ba-11e9-8af7-21d40822d6e6.png)
-   #### Menggunakan syntax ip.src == 10.151.36.81 && http.host == "mb.its.ac.id".
+   Menggunakan syntax ip.src == 10.151.36.81 && http.host == "mb.its.ac.id".
    
    ip.src == 10.151.36.81 untuk memfilter IP yang hanya berasal dari 10.151.36.81(ip source).
      
