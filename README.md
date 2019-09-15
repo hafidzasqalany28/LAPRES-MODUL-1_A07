@@ -5,7 +5,9 @@
 1) Filter sehingga wireshark hanya mengambil paket yang mengandung port 21.
  ### Jawaban
    ![Screenshot (92)](https://user-images.githubusercontent.com/45744801/64918901-a2701500-d7ce-11e9-8c57-28ce7e247c87.png)
+   
    menggunakan syntax port 21
+   
    ![Screenshot (93)](https://user-images.githubusercontent.com/45744801/64918903-a69c3280-d7ce-11e9-9b5b-2820ef263ca9.png)
    
    note : tidak ada hasil filter dari wireshark sebab web yang saya buka tidak ada yang mengandung port 21.
@@ -13,13 +15,17 @@
 2) Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80 (ajk.if.its.ac.id).
  ### Jawaban
    ![Screenshot (105)](https://user-images.githubusercontent.com/45744801/64918916-c6cbf180-d7ce-11e9-8009-7fa707b7b875.png)
+   
    menggunakan syntax src port 21 && host ajk.if.its.ac.id 
+   
    ![Screenshot (104)](https://user-images.githubusercontent.com/45744801/64918918-c92e4b80-d7ce-11e9-910c-5262aa535f58.png)
    
 3) Filter sehingga wireshark hanya menampilkan paket yang menuju port 443 (google.com).
  ### Jawaban
    ![Screenshot (106)](https://user-images.githubusercontent.com/45744801/64918922-d6e3d100-d7ce-11e9-8993-aa7eb19c66a0.png)
+   
    menggunakan syntax dst port 443 && host google.com
+   
    ![Screenshot (107)](https://user-images.githubusercontent.com/45744801/64918923-d8ad9480-d7ce-11e9-89f2-50eb61bc76c6.png)
    
 4) Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian.
